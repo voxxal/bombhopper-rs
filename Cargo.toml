@@ -4,6 +4,8 @@ version = "0.1.0"
 authors = ["voxal"]
 edition = "2021"
 
+description = """Rust bindings for bombhopper.io."""
+
 license = "MIT/Apache-2.0"
 repository = "https://github.com/voxxal/bombhopper-rs"
 

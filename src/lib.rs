@@ -1,4 +1,5 @@
-//! Bombhopper Api for rust
+//! Rust bindings for [bombhopper.io](bombhoppper.io).
+
 use std::{
     collections::HashMap,
     ops::{Add, Mul, Sub},
