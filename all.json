@@ -1,0 +1,238 @@
+{
+	"name": "My level",
+	"timings": [
+		0,
+		0
+	],
+	"entities": [
+		{
+			"type": "player",
+			"params": {
+				"isStatic": false,
+				"angle": 0,
+				"x": 160,
+				"y": 480,
+				"infiniteAmmo": "bullet"
+			}
+		},
+		{
+			"type": "endpoint",
+			"params": {
+				"isStatic": true,
+				"angle": 0,
+				"x": 250,
+				"y": 420,
+				"rightFacing": false
+			}
+		},
+		{
+			"type": "text",
+			"params": {
+				"angle": 0,
+				"x": 336,
+				"y": 484,
+				"copy": {
+					"en": "Bo\nmb"
+				},
+				"anchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"align": "left",
+				"fillColor": 16777215,
+				"opacity": 1
+			}
+		},
+		{
+			"type": "paint",
+			"params": {
+				"fillColor": 10131862,
+				"opacity": 0.94,
+				"vertices": [
+					{
+						"x": 420.0000000000001,
+						"y": 500
+					},
+					{
+						"x": 420.0000000000001,
+						"y": 460
+					},
+					{
+						"x": 380,
+						"y": 460
+					},
+					{
+						"x": 380,
+						"y": 500
+					}
+				]
+			}
+		},
+		{
+			"type": "normal",
+			"params": {
+				"isStatic": true,
+				"vertices": [
+					{
+						"x": 180,
+						"y": 520
+					},
+					{
+						"x": 180,
+						"y": 560
+					},
+					{
+						"x": 140,
+						"y": 560
+					},
+					{
+						"x": 140,
+						"y": 520
+					}
+				]
+			}
+		},
+		{
+			"type": "ice",
+			"params": {
+				"isStatic": true,
+				"vertices": [
+					{
+						"x": 240,
+						"y": 520
+					},
+					{
+						"x": 240,
+						"y": 560
+					},
+					{
+						"x": 200,
+						"y": 560
+					},
+					{
+						"x": 200,
+						"y": 520
+					}
+				]
+			}
+		},
+		{
+			"type": "breakable",
+			"params": {
+				"isStatic": true,
+				"vertices": [
+					{
+						"x": 300,
+						"y": 520
+					},
+					{
+						"x": 300,
+						"y": 560
+					},
+					{
+						"x": 260,
+						"y": 560
+					},
+					{
+						"x": 260,
+						"y": 520
+					}
+				]
+			}
+		},
+		{
+			"type": "deadly",
+			"params": {
+				"isStatic": true,
+				"vertices": [
+					{
+						"x": 360,
+						"y": 520
+					},
+					{
+						"x": 360,
+						"y": 560
+					},
+					{
+						"x": 320,
+						"y": 560
+					},
+					{
+						"x": 320,
+						"y": 520
+					}
+				]
+			}
+		},
+		{
+			"type": "bouncy",
+			"params": {
+				"isStatic": true,
+				"vertices": [
+					{
+						"x": 420,
+						"y": 520
+					},
+					{
+						"x": 420,
+						"y": 560
+					},
+					{
+						"x": 380,
+						"y": 560
+					},
+					{
+						"x": 380,
+						"y": 520
+					}
+				]
+			}
+		},
+		{
+			"type": "normal",
+			"params": {
+				"isStatic": true,
+				"x": 160,
+				"y": 600,
+				"radius": 20
+			}
+		},
+		{
+			"type": "ice",
+			"params": {
+				"isStatic": true,
+				"x": 220,
+				"y": 600,
+				"radius": 20
+			}
+		},
+		{
+			"type": "breakable",
+			"params": {
+				"isStatic": true,
+				"x": 280,
+				"y": 600,
+				"radius": 20
+			}
+		},
+		{
+			"type": "deadly",
+			"params": {
+				"isStatic": true,
+				"x": 340,
+				"y": 600,
+				"radius": 20
+			}
+		},
+		{
+			"type": "bouncy",
+			"params": {
+				"isStatic": true,
+				"x": 400,
+				"y": 600,
+				"radius": 20
+			}
+		}
+	],
+	"formatVersion": 0
+}
