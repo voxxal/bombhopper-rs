@@ -1,6 +1,6 @@
 [package]
 name = "bombhopper"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["voxal"]
 edition = "2021"
 
