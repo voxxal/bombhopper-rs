@@ -9,8 +9,8 @@ use serde::Serialize;
 
 #[derive(Serialize, PartialEq, Default)]
 pub struct Point {
-    x: f32,
-    y: f32,
+    pub x: f32,
+    pub y: f32,
 }
 
 impl Point {
