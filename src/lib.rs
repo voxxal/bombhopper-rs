@@ -7,7 +7,7 @@ use std::{
 
 use serde::Serialize;
 
-#[derive(Serialize, PartialEq, Default)]
+#[derive(Serialize, PartialEq, Default, Clone, Copy)]
 pub struct Point {
     pub x: f32,
     pub y: f32,
@@ -52,7 +52,7 @@ impl Mul<f32> for Point {
     }
 }
 
-#[derive(Serialize)]
+#[derive(Serialize, Clone, Copy)]
 #[serde(rename_all = "camelCase")]
 pub enum AmmoType {
     Empty,
@@ -61,7 +61,7 @@ pub enum AmmoType {
     Grenade,
 }
 
-#[derive(Serialize)]
+#[derive(Serialize, Clone)]
 pub enum Ammo {
     #[serde(rename = "infiniteAmmo")]
     Infinite(AmmoType),
@@ -87,14 +87,14 @@ impl Ammo {
     }
 }
 
-#[derive(Serialize)]
+#[derive(Serialize, Clone)]
 #[serde(untagged)]
 pub enum Shape {
     Polygon { vertices: Vec<Point> },
     Circle { x: f32, y: f32, radius: f32 },
 }
 
-#[derive(Serialize)]
+#[derive(Serialize, Clone)]
 #[serde(rename_all = "camelCase")]
 pub enum TextAlign {
     Left,
@@ -105,7 +105,7 @@ pub enum TextAlign {
 
 macro_rules! define_entities {
     ( $( $material: ident),* ) => {
-        #[derive(Serialize)]
+        #[derive(Serialize, Clone)]
         #[serde(rename_all = "camelCase", tag = "type", content = "params")]
         pub enum Entity {
             #[serde(rename_all = "camelCase")]
